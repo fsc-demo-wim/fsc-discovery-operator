@@ -1,0 +1,7 @@
+apiVersion: fsc.henderiw.be/v1
+kind: NetworkNode
+metadata:
+  name: networknode-sample
+spec:
+  # Add fields here
+  foo: bar

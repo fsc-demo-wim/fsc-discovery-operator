@@ -1,0 +1,20 @@
+# permissions for end users to view networknodes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: networknode-viewer-role
+rules:
+- apiGroups:
+  - fsc.henderiw.be
+  resources:
+  - networknodes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - fsc.henderiw.be
+  resources:
+  - networknodes/status
+  verbs:
+  - get

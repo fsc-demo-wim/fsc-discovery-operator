@@ -1,0 +1,11 @@
+domain: henderiw.be
+layout: go.kubebuilder.io/v2
+projectName: fsc-discovery-operator
+repo: github.com/fsc-demo-wim/fsc-discovery-operator
+resources:
+- group: fsc
+  kind: NetworkNode
+  version: v1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
